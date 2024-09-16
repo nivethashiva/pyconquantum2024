@@ -75,7 +75,7 @@ print("Quantum Optimal Value:", result.eigenvalue.real)
 print("Quantum Execution Time:", end_time_quantum - start_time_quantum)
 
 # Plot the performance comparison
-times = [end_time_quantum - start_time_quantum, end_time_classical - start_time_classical]
+times = [end_time_classical - start_time_classical, end_time_quantum - start_time_quantum]
 plt.bar(['Classical (Dijkstra)', 'Quantum (QAOA)'], times, color=['blue', 'green'])
 plt.ylabel('Time Taken (s)')
 plt.yscale('log')

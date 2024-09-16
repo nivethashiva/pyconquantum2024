@@ -79,7 +79,7 @@ classical_result = nx.dijkstra_path(G, source=0, target=8)
 classical_time = time.time() - start_time_classical
 
 # Performance comparison
-times = [qaoa_time, classical_time]
+times = [classical_time, qaoa_time]
 labels = ['Classical (Dijkstra)', 'Quantum (QAOA)']
 colors = ['blue', 'green']
 
